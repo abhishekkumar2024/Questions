@@ -1,0 +1,159 @@
+%-------------------------------------------------------------------------------
+%  Abhishek Kumar — Backend Engineer Resume (ATS-friendly, one page)
+%
+%  HOW TO USE ON OVERLEAF:
+%    1. Go to overleaf.com  ->  New Project  ->  Blank Project
+%    2. Replace the contents of main.tex with this file (or upload this .tex)
+%    3. Menu (top-left)  ->  Compiler  ->  pdfLaTeX   ->  Recompile
+%-------------------------------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[colorlinks=true]{hyperref}
+\input{glyphtounicode}
+
+%----------- COLORS -----------
+\definecolor{navy}{HTML}{1F3A5F}
+\definecolor{linkblue}{HTML}{15498A}
+\hypersetup{urlcolor=linkblue, linkcolor=linkblue, citecolor=linkblue,
+  pdftitle={Abhishek Kumar - Backend Engineer Resume},
+  pdfauthor={Abhishek Kumar},
+  pdfkeywords={Backend Engineer, Data Engineer, Python, Node.js, TypeScript, Kafka, Temporal, Apache Druid, Apache Iceberg, GraphQL, PostgreSQL, Redis, Microservices}}
+
+%----------- PAGE SETUP -----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.62in}
+\addtolength{\evensidemargin}{-0.62in}
+\addtolength{\textwidth}{1.24in}
+\addtolength{\topmargin}{-0.72in}
+\addtolength{\textheight}{1.44in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------- SECTION HEADING STYLE -----------
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries\color{navy}
+}{}{0em}{}[\color{navy}\titlerule \vspace{-4pt}]
+
+% Ensure the PDF text layer is machine-readable (important for ATS parsing)
+\pdfgentounicode=1
+
+%----------- CUSTOM COMMANDS -----------
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+%----------- HEADER -----------
+\begin{center}
+    {\LARGE\bfseries Abhishek Kumar} \\ \vspace{3pt}
+    {\color{navy}\bfseries\small Backend Engineer \,$|$\, Distributed Systems \,$\cdot$\, Data-Intensive Pipelines \,$\cdot$\, Event-Driven Microservices \,$\cdot$\, Python \,$\cdot$\, Node.js \,$\cdot$\, TypeScript} \\ \vspace{3pt}
+    \small Pune, Maharashtra, India \,$|$\, +91 9636550375 \,$|$\,
+    \href{mailto:abhishekkumarverma109@gmail.com}{abhishekkumarverma109@gmail.com} \\ \vspace{1pt}
+    \small
+    \href{https://www.linkedin.com/in/abhishek-kumar-74169023a/}{linkedin.com/in/abhishek-kumar-74169023a} \,$|$\,
+    \href{https://github.com/abhishekkumar2024}{github.com/abhishekkumar2024} \,$|$\,
+    \href{https://leetcode.com/u/verma_2020/}{leetcode.com/u/verma\_2020}
+\end{center}
+
+%----------- SUMMARY -----------
+\section{Professional Summary}
+\small{Backend Engineer with 2+ years of experience building distributed systems, scalable microservices, APIs, and high-throughput data pipelines in Python, Node.js, and TypeScript. Built production systems processing \textbf{1B+ events} and \textbf{10M+ files per day} with Kafka, Temporal, Apache Iceberg, and Druid, delivering up to \textbf{10x} faster queries and \textbf{95\%} faster reporting.}
+
+%----------- SKILLS -----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt]
+  \small{\item{
+    \textbf{Languages:} Python, TypeScript, JavaScript, SQL, C++ \\
+    \textbf{Backend \& APIs:} Node.js, Express.js, GraphQL (Apollo Server), RESTful APIs, Prisma ORM, Next.js, Microservices, Event-Driven Architecture \\
+    \textbf{Data Engineering:} Apache Kafka, Temporal.io, Apache Druid, Apache Iceberg, Parquet, ETL Pipelines, Pandas, Polars, DuckDB \\
+    \textbf{Databases \& Caching:} PostgreSQL, MySQL, MongoDB, Redis, MinIO/S3, Query Optimization, Indexing \\
+    \textbf{Security \& Reliability:} Keycloak (OAuth2/OIDC), JWT, RBAC, Rate Limiting, Zod, Retry Policies, Data Reconciliation \\
+    \textbf{Cloud \& DevOps:} Docker, Docker Compose, GitLab CI, GitHub Actions, CI/CD, GCP, Microsoft Azure, Nginx, Linux, Supervisord \\
+    \textbf{Core CS:} Data Structures \& Algorithms, OOP, System Design (HLD \& LLD), Concurrency, Consistent Hashing, Replication
+  }}
+\end{itemize}
+
+%----------- EXPERIENCE -----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Software Development Engineer (SDE-1)}{July 2024 -- Present}
+    {Whiteklay Technology \,$|$\, Telecom Network Performance Monitoring (NPM) Platform}{Pune, India}
+  \resumeItemListStart
+    \resumeItem{Built config-driven parsers for 2G/4G/5G \textbf{PM \& CM} XML from \textbf{5 network vendors} (Ericsson, Nokia, Huawei, Samsung, Mavenir), normalizing vendor counters into one schema for KPI analytics.}
+    \resumeItem{Architected fault-tolerant \textbf{Temporal.io} workflows (retry policies, timeouts, dedicated task queues) orchestrating \textbf{10M+ XML files/day} across ETL pipelines.}
+    \resumeItem{Engineered \textbf{Kafka} event-streaming services ingesting \textbf{1B+ events/day} into \textbf{Apache Druid}, powering real-time network KPI dashboards with \textbf{sub-second} query latency.}
+    \resumeItem{Led the migration of batch-heavy ingestion from Kafka to \textbf{Apache Iceberg}, cutting Druid supervisor load by \textbf{40\%} and enabling partition-based direct queries.}
+    \resumeItem{Developed a KPI formula engine that turns operator-defined formulas into Druid SQL, cutting report generation time by \textbf{95\%}; added Python compaction, dedup, and rollup jobs for up to \textbf{10x} faster queries.}
+    \resumeItem{Built \textbf{GraphQL APIs} in Node.js/TypeScript (Apollo Server, Prisma, PostgreSQL, Redis) for KPI, report, and scheduling modules, secured with \textbf{Keycloak} SSO and role-based access control.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading{\textbf{Distributed Cache System} $|$ \emph{Node.js, Consistent Hashing, Master--Slave Replication} \,$\cdot$\, \href{https://github.com/abhishekkumar2024/distributed-cache}{GitHub}}
+  \resumeItemListStart
+    \resumeItem{Designed a sharded cache cluster using consistent hashing with \textbf{200 virtual nodes}, keeping key distribution uniform and rebalancing minimal during node churn.}
+    \resumeItem{Implemented master--slave replication with a custom load balancer, supporting node addition/removal with \textbf{zero cache invalidation}.}
+  \resumeItemListEnd
+
+  \vspace{3pt}
+  \resumeProjectHeading{\textbf{CamelThar --- Travel Platform} $|$ \emph{Next.js 14, TypeScript, PostgreSQL, Redis} \,$\cdot$\, \href{https://www.camelthar.com}{Live} \,$\cdot$\, \href{https://github.com/abhishekkumar2024/TravelWebsite}{GitHub}}
+  \resumeItemListStart
+    \resumeItem{Launched a production travel platform solo on Vercel with \textbf{13+ REST endpoints}, secured by JWT auth, Redis rate limiting, Zod validation, and atomic locking against race conditions.}
+    \resumeItem{Designed a Redis-first real-time layer (\textbf{50ms} chat delivery, TTL typing indicators, Sorted-Set presence) on serverless without WebSockets, plus multi-layer caching at \textbf{sub-10ms} hit latency.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{National Institute of Technology (NIT), Rourkela}{2020 -- 2024}
+    {B.Tech, Electronics \& Communication Engineering \,$|$\, CGPA: 7.97 / 10}{Rourkela, Odisha}
+\resumeSubHeadingListEnd
+
+%----------- ACHIEVEMENTS -----------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.2in, itemsep=0pt, topsep=2pt]
+  \resumeItem{Solved \textbf{1,500+} DSA problems across \href{https://leetcode.com/u/verma_2020/}{LeetCode}, GeeksforGeeks, and other platforms; ranked \textbf{621 of 27,938} (top 3\% globally) in \href{https://leetcode.com/contest/biweekly-contest-169/ranking/?region=global_v2}{LeetCode Biweekly Contest 169}.}
+\end{itemize}
+
+\end{document}
